@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Railways</title>
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <h2>Details of pentioners</h2>
+        <form>
+            <input type="text" placeholder="Name" name="name">
+            <input type="text" placeholder="designation" name="desig">
+            <input type="number" placeholder="Pf No." name="pfNo">
+            <input type="number" min="0" name="basic" placeholder="Basic">
+            <input type="number" name="currentDa" placeholder="Current DA">
+            <input type="number" name="gp" placeholder="G.P.">
+            <input type="number" name="qs" placeholder="Q.S.">
+            <input type="number" name="gis" placeholder="G.I.S.">
+            <label for="date of birth" id="lab">
+                D.O.B : <input type="text" name="dob" >
+            </label>
+
+            <label for="date of retirement" id="lab">
+                D.O.R : <input type="text" name="dor" >
+            </label>
+            <label for="date of retirement" id="lab">
+                D.O.A : <input type="text" name="doa" >
+            </label>
+            <!--<input type="text" name="status" placeholder="Live or Death">-->
+            <select name="status">
+                <option value="live">Alive</option>
+                <option value="death">Death</option>
+            </select>
+            <input type="number" name="apl" placeholder="APL" min="0" max="300">
+            <input type="number" name="hapl" placeholder="HAPL" min="0" max="300">
+            <!--<input type="text" name="penType" placeholder="S.R., V.R., medically unfit">-->
+            <select name="pensionType">
+                <option value="sr">S.R.</option>
+                <option value="vr">V.R.</option>
+                <option value="medicallyUnfit">Medically Unfit     </option>
+            </select>
+            <input type="number" name="factor" placeholder="factor">
+            <input type="text" name="benificiaryName" placeholder="Benificiary Name">
+            <input type="text" name="relation" id="relation" placeholder="Relation">
+            <div>
+                <label for="Dobbenificiary">D.O.B Benificiary</label>
+                <input type="text" name="benificiaryDob" id="benificiaryDob"></div>
+            <input type="number" name="recovery1" id="recovery1" placeholder="RLHS Recovery">
+            <input type="number" name="recovery2" id="recovery2" placeholder=" Recovery">
+            <input type="number" name="recovery3" id="recovery3" placeholder="Recovery">
+
+            <input type="number" name="bankAccount" id="bankAccount" placeholder="Bank Account">
+            <input type="text" name="ifscCode" id="ifsc" placeholder="IFSC Code">
+
+            <div>
+                <label>FMA : </label>
+                <select name="fma" id="fma">
+                        <option value="yes">YES</option>
+                        <option value="no">NO</option>
+                    </select>
+                <label>Vigelance Clearance : </label>
+                <select name="vigelanceClearance" id="vigelanceClearance">
+                <option value="yes">YES</option>
+                <option value="nO">NO</option>
+            </select>
+            </div>
+        </form>
+        <button onclick="calculations();">Submit</button>
+        <div id="allcalculations">
+
+        </div>
+        <script src="./index.js">
+        </script>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

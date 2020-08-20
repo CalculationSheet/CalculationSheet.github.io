@@ -1,0 +1,24 @@
+input {
+    width: 10cm;
+    height: 30px;
+}
+
+#lab {
+    display: block;
+}
+
+button {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 50%;
+}
+
+select {
+    width: 10cm;
+    height: 30px;
+}
+
+.box {
+    width: 300px;
+    border: 1px solid green;
+}
