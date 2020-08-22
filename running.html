@@ -15,10 +15,13 @@
         <h1>Running</h1>
     </head>
     <main>
-        <select onchange="department(this.value)">
+        <section>
+            <label for="department">Department</label>
+            <select onchange="department(this.value)">
                     <option value="https://calculationsheet.github.io">Other</option>
                     <option value="./running.html">Running</option>
                 </select>
+        </section>
         <label for="name">Name</label>
         <input type="text" name="name">
         <label for="designation">Designation</label>
