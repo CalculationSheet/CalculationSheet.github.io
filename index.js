@@ -1,3 +1,7 @@
+function department(src) {
+    window.location = src;
+}
+
 function calculations() {
     let name = document.querySelector("input[name=name]").value;
     let desig = document.querySelector("input[name=desig]").value;

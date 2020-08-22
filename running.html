@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./running.css">
+    <title>Running</title>
+</head>
+
+<body>
+
+    <head>
+        <h1>Running</h1>
+    </head>
+    <main>
+        <label for="name">Name</label>
+        <input type="text" name="name">
+        <label for="designation">Designation</label>
+        <input type="text" name="desig" class="small">
+        <label for="Pf No.">Pf No.</label>
+        <input type="number" name="pfNo">
+        <section>
+            <label for="Basic">Basic</label>
+            <input type="number" min="0" name="basic">
+            <label for="Current DA">Current DA</label>
+            <input type="number" name="currentDa">
+        </section>
+        <section>
+            <label for="G.P.">G.P.</label>
+            <input type="number" name="gp" placeholder="Grade Pay" class="small">
+            <label for="Q.S.">Q.S.</label>
+            <input type="number" name="qs" placeholder="Qualifying Service" class="small">
+            <label for="G.I.S.">G.I.S.</label>
+            <input type="number" name="gis" class="small">
+        </section>
+        <label for="date of birth" id="lab">
+                D.O.B : <input type="date" name="dob" >
+            </label>
+        <label for="date of retirement" id="lab">
+                    D.O.A : <input type="date" name="doa" >
+                </label>
+        <label for="date of retirement" id="lab">
+                D.O.R : <input type="date" name="dor" >
+            </label>
+
+        <section>
+            <select name="status" class="small">
+                <option value="live">Alive</option>
+                <option value="death">Death</option>
+            </select>
+            <label for="APL">APL</label>
+            <input type="number" name="apl" class="small" min="0" max="300">
+            <label for="HAPL">HAPL</label>
+            <input type="number" name="hapl" class="small" min="0" max="300">
+            <!--<input type="text" name="penType" placeholder="S.R., V.R., medically unfit">-->
+            <select name="pensionType" class="small">
+                <option value="sr">S.R.</option>
+                <option value="vr">V.R.</option>
+                <option value="medicallyUnfit">Medically Unfit     </option>
+            </select>
+            <label for="factor">Factor</label>
+            <input type="number" name="factor" class="small">
+        </section>
+        <label for="Benificiary Name">Benificiary Name</label>
+        <input type="text" name="benificiaryName">
+        <label for="Relation">Relation</label>
+        <input type="text" name="relation" id="relation">
+        <div>
+            <label for="Dobbenificiary">D.O.B Benificiary</label>
+            <input type="text" name="benificiaryDob" id="benificiaryDob"></div>
+        <label for="RLHS Recovery">RLHS Recovery</label>
+        <input type="number" name="recovery1" id="recovery1">
+        <label for="Recovery">Recovery</label>
+        <input type="number" name="recovery2" id="recovery2">
+        <label for="Recovery">Recovery</label>
+        <input type="number" name="recovery3" id="recovery3">
+        <section>
+            <label for="Bank Account">Bank Account</label>
+            <input type="number" name="bankAccount" id="bankAccount">
+            <label for="IFSC Code">IFSC Code</label>
+            <input type="text" name="ifscCode" id="ifsc">
+        </section>
+        <section>
+            <label>FMA : </label>
+            <select name="fma" id="fma">
+                        <option value="yes">YES</option>
+                        <option value="no">NO</option>
+                    </select>
+            <label>Vigelance Clearance : </label>
+            <select name="vigelanceClearance" id="vigelanceClearance">
+                <option value="yes">YES</option>
+                <option value="nO">NO</option>
+            </select>
+        </section>
+        </form>
+        <button onclick="calculations();">Submit</button>
+
+
+        <div id="allCalculations">
+
+        </div>
+        <script src="./running.js">
+        </script>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

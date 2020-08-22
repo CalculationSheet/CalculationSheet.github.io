@@ -1,0 +1,15 @@
+input {
+    width: 5cm;
+}
+
+.small {
+    width: 3cm;
+}
+
+select {
+    width: 5cm;
+}
+
+button {
+    margin-left: 20%;
+}
