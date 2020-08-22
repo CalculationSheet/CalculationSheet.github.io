@@ -1,3 +1,7 @@
+function department(src) {
+    window.location = src;
+}
+
 function calculations() {
     let allCalculations = document.getElementById("allCalculations");
     let basic = parseInt(document.querySelector("input[name=basic]").value);
