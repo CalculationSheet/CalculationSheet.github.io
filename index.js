@@ -3,7 +3,7 @@ function department(src) {
 }
 
 function calculations() {
-    let allCalculation = document.getElementById("allCalculations");
+    let allCalculation = document.getElementById("allCalculation");
     let name = document.querySelector("input[name=name]").value;
     let desig = document.querySelector("input[name=desig]").value;
     let pfNo = parseInt(document.querySelector("input[name=pfNo]").value);
