@@ -10,6 +10,12 @@ input {
 button {
     margin-top: 20px;
     text-align: center;
+    margin-left: 20%;
+}
+
+#select {
+    margin-top: 20px;
+    text-align: center;
     margin-left: 50%;
 }
 
