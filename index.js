@@ -87,11 +87,11 @@ function calculations() {
     let button = document.createElement("button");
     button.innerHTML = "Print it";
     let body = document.getElementsByTagName("body")[0];
-    allCalculations.appendChild(button);
+    allCalculation.appendChild(button);
     button.addEventListener("click", function() { window.print(); });
     let buttonClear = document.createElement("button");
     buttonClear.innerHTML = "clear";
-    allCalculations.appendChild(buttonClear);
+    allCalculation.appendChild(buttonClear);
     buttonClear.addEventListener("click", function() {
         if (allCalculations.childNodes.length > 0) {
             allCalculations.innerHTML = "";
