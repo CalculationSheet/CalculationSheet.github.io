@@ -93,8 +93,8 @@ function calculations() {
     buttonClear.innerHTML = "clear";
     allCalculation.appendChild(buttonClear);
     buttonClear.addEventListener("click", function() {
-        if (allCalculations.childNodes.length > 0) {
-            allCalculations.innerHTML = "";
+        if (allCalculation.childNodes.length > 0) {
+            allCalculation.innerHTML = "";
         }
     });
 
