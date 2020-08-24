@@ -18,19 +18,28 @@
         <h2>Details of pentioners</h2>
         <form>
             <section>
+                <label for="department">Department</label>
                 <select onchange="department(this.value)">
                         <option value="./index.html">Other</option>
                         <option value="./running.html">Running</option>
                     </select>
             </section>
+            <label for="name">Name : </label>
             <input type="text" placeholder="Name" name="name">
+            <label for="designation">Designation : </label>
             <input type="text" placeholder="designation" name="desig">
+            <label for="pfNo">Pf Number : </label>
             <input type="number" placeholder="Pf No." name="pfNo">
             <section>
+                <label for="basic">Basic : </label>
                 <input type="number" min="0" name="basic" placeholder="Basic">
+                <label for="cuurentDa">Current DA : </label>
                 <input type="number" name="currentDa" placeholder="Current DA">
+                <label for="gp">G.P. : </label>
                 <input type="number" name="gp" placeholder="G.P." class="small">
+                <label for="qs">Q.S. : </label>
                 <input type="number" name="qs" placeholder="Q.S." class="small">
+                <label for="gis">G.I.S. : </label>
                 <input type="number" name="gis" placeholder="G.I.S." class="small">
             </section>
             <label for="date of birth" id="lab">
@@ -45,30 +54,43 @@
             </label>
             <!--<input type="text" name="status" placeholder="Live or Death">-->
             <section>
+                <label for="status">Status</label>
                 <select name="status" class="small">
                 <option value="live">Alive</option>
                 <option value="death">Death</option>
             </select>
+                <label for="apl">APL : </label>
                 <input type="number" name="apl" placeholder="APL" min="0" max="300" class="small">
+                <label for="hapl">HAPL : </label>
                 <input type="number" name="hapl" placeholder="HAPL" min="0" max="300" class="small">
                 <!--<input type="text" name="penType" placeholder="S.R., V.R., medically unfit">-->
+                <label for="pensionType">Pension Type : </label>
                 <select name="pensionType" class="small">
                 <option value="sr">S.R.</option>
                 <option value="vr">V.R.</option>
                 <option value="medicallyUnfit">Medically Unfit     </option>
             </select>
+                <label for="factor">Factor : </label>
                 <input type="number" name="factor" placeholder="factor" class="small"></section>
+            <label for="Benificiary Name">Benificiary Name : </label>
             <input type="text" name="benificiaryName" placeholder="Benificiary Name">
+            <label for="Relation">Relation : </label>
             <input type="text" name="relation" id="relation" placeholder="Relation" class="small">
             <div>
-                <label for="Dobbenificiary">D.O.B Benificiary</label>
+                <label for="Dobbenificiary">D.O.B Benificiary : </label>
                 <input type="date" name="benificiaryDob" id="benificiaryDob"></div>
             <section>
+                <label for="RLHSRecovery">RLHS Recovery : </label>
                 <input type="number" name="recovery1" id="recovery1" placeholder="RLHS Recovery">
+                <label for="Recovery"> Recovery : </label>
                 <input type="number" name="recovery2" id="recovery2" placeholder=" Recovery">
+                <label for="Recovery"> Recovery : </label>
                 <input type="number" name="recovery3" id="recovery3" placeholder="Recovery">
             </section>
-            <section> <input type="number" name="bankAccount" id="bankAccount" placeholder="Bank Account">
+            <section>
+                <label for="BankAccount">Bank Account : </label>
+                <input type="number" name="bankAccount" id="bankAccount" placeholder="Bank Account">
+                <label for="ifscCode">IFSC Code : </label>
                 <input type="text" name="ifscCode" id="ifsc" placeholder="IFSC Code">
             </section>
             <div class="small">
