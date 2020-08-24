@@ -1,6 +1,9 @@
 input {
-    width: 10cm;
-    height: 30px;
+    width: 5cm;
+}
+
+.small {
+    width: 3cm;
 }
 
 #lab {
