@@ -17,20 +17,20 @@
     <main>
         <h2>Details of pentioners</h2>
         <form>
-            <section>
+            <fieldset>
                 <label for="department">Department</label>
                 <select onchange="department(this.value)">
                         <option value="./index.html">Other</option>
                         <option value="./running.html">Running</option>
                     </select>
-            </section>
+            </fieldset>
             <label for="name">Name : </label>
             <input type="text" placeholder="Name" name="name">
             <label for="designation">Designation : </label>
             <input type="text" placeholder="designation" name="desig">
             <label for="pfNo">Pf Number : </label>
             <input type="number" placeholder="Pf No." name="pfNo">
-            <section>
+            <fieldset>
                 <label for="basic">Basic : </label>
                 <input type="number" min="0" name="basic" placeholder="Basic">
                 <label for="cuurentDa">Current DA : </label>
@@ -41,7 +41,7 @@
                 <input type="number" name="qs" placeholder="Q.S." class="small">
                 <label for="gis">G.I.S. : </label>
                 <input type="number" name="gis" placeholder="G.I.S." class="small">
-            </section>
+            </fieldset>
             <label for="date of birth" id="lab">
                 D.O.B : <input type="date" name="dob" >
             </label>
@@ -53,7 +53,7 @@
                 D.O.R : <input type="date" name="dor" >
             </label>
             <!--<input type="text" name="status" placeholder="Live or Death">-->
-            <section>
+            <fieldset>
                 <label for="status">Status</label>
                 <select name="status" class="small">
                 <option value="live">Alive</option>
@@ -71,7 +71,7 @@
                 <option value="medicallyUnfit">Medically Unfit     </option>
             </select>
                 <label for="factor">Factor : </label>
-                <input type="number" name="factor" placeholder="factor" class="small"></section>
+                <input type="number" name="factor" placeholder="factor" class="small"></fieldset>
             <label for="Benificiary Name">Benificiary Name : </label>
             <input type="text" name="benificiaryName" placeholder="Benificiary Name">
             <label for="Relation">Relation : </label>
@@ -79,21 +79,21 @@
             <div>
                 <label for="Dobbenificiary">D.O.B Benificiary : </label>
                 <input type="date" name="benificiaryDob" id="benificiaryDob"></div>
-            <section>
+            <fieldset>
                 <label for="RLHSRecovery">RLHS Recovery : </label>
                 <input type="number" name="recovery1" id="recovery1" placeholder="RLHS Recovery">
                 <label for="Recovery"> Recovery : </label>
                 <input type="number" name="recovery2" id="recovery2" placeholder=" Recovery">
                 <label for="Recovery"> Recovery : </label>
                 <input type="number" name="recovery3" id="recovery3" placeholder="Recovery">
-            </section>
-            <section>
+            </fieldset>
+            <fieldset>
                 <label for="BankAccount">Bank Account : </label>
                 <input type="number" name="bankAccount" id="bankAccount" placeholder="Bank Account">
                 <label for="ifscCode">IFSC Code : </label>
                 <input type="text" name="ifscCode" id="ifsc" placeholder="IFSC Code">
-            </section>
-            <section class="small">
+            </fieldset>
+            <fieldset class="small">
                 <label>FMA : </label>
                 <select name="fma" id="fma">
                         <option value="yes">YES</option>
@@ -104,7 +104,7 @@
                 <option value="yes">YES</option>
                 <option value="nO">NO</option>
             </select>
-            </section>
+            </fieldset>
         </form>
         <button onclick="calculations();" id="select">Submit</button>
         <div id="allCalculation">
